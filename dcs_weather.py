@@ -15,7 +15,7 @@ import random as rd
 # updated for DCS 2.8 to deal with start_time moving to end of file
 # updated 2022 dates when moon is full
 # created by havoc-company.com
-s_version_info = "V2.8_2022/DEC/14_12:150"
+s_version_info = "V2.9_2023/JAN/01_15:10"
 
 
 # usage
@@ -127,10 +127,10 @@ class G:  # Globals class ...... to store all the data we need to mess with (pop
 
                ]
 
-    # presets for 2022, these dates are when the moon is full, server at index zero will be Jan 17th @ 13:00hrs start
+    # presets for 2023, these dates are when the moon is full, server at index zero will be Jan 6th @ 13:00hrs start
     # this gives 4 hours of daylight before going dark for an hour before server restart (server get restarted every 6 hours)
-    l_dates_new = [['17', '13'], ['16', '14'], ['18', '14'], ['16', '15'], ['16', '15'], ['14', '16'],
-                   ['13', '16'], ['11', '15'], ['10', '15'], ['9', '14'], ['8', '14'], ['7', '13']
+    l_dates_new = [['6', '13'], ['5', '14'], ['7', '14'], ['6', '15'], ['5', '15'], ['4', '16'],
+                   ['3', '16'], ['1', '15'], ['29', '15'], ['28', '14'], ['27', '14'], ['27', '13']
                    ]
 
     b_change_time = True  # set to to False if you do NOT want to update time
