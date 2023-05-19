@@ -13,9 +13,9 @@ import random as rd
 
 # real time / weather update script for dcs world (tested under 2.7)
 # updated for DCS 2.8 to deal with start_time moving to end of file
-# updated 2022 dates when moon is full
+# updated 2023 dates when moon is full
 # created by havoc-company.com
-s_version_info = "V2.9_2023/JAN/01_15:10"
+s_version_info = "V3.0_2023/MAY/19_11:00"
 
 
 # usage
@@ -205,6 +205,9 @@ def check_weather_limits():
 
     if int(G.s_cloud_density) >= 9 or G.s_fog_enable == 'true' and int(G.s_cloud_base_m) <= 2000:
         G.s_cloud_base_m = '5000'
+	
+	G.s_wind_speed_gnd = str(round((int(G.s_wind_speed_gnd) / 2.12))) 
+	# this is due to ED using ground speed then multi by 2.12 to set 500m speed which makes it insanely fast
 
 
 def convert_feet_to_meters(f_feet):  # cos we get data in feet
