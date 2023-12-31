@@ -1,6 +1,6 @@
-Read me for V 2.8 dcs_weather from shadowze - 2022/12/11 11:50
+Read me for V 2.8 dcs_weather from shadowze - 2023/DEC/31 09:50
 - Added new as a commandline parameter , will use same month but pick an evening with a full moon
-- Added ability to use the cloud presets that DCS 2.7 now has
+- Added ability to use the cloud presets that DCS 2.7+ now has
 
 
 NOTE: Please do NOT distribute this, I will keep this on github
