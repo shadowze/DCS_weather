@@ -1,6 +1,6 @@
-Read me for V 2.8 dcs_weather from shadowze - 2022/12/11 11:50
+Read me for V 2.8 dcs_weather from shadowze - 2023/DEC/31 09:50
 - Added new as a commandline parameter , will use same month but pick an evening with a full moon
-- Added ability to use the cloud presets that DCS 2.7 now has
+- Added ability to use the cloud presets that DCS 2.7+ now has
 
 
 NOTE: Please do NOT distribute this, I will keep this on github
@@ -106,10 +106,10 @@ YYYY , MM , DD , hh , mm
 
 For people who like evening and then a bit of night flying the following presets we added, these days have a FULL MOON
 
-# presets for 2021 onwards use new parameter, these dates are when the moon is full, server at index zero will be Jan 28th @ 13:00hrs start
+# presets for 2021 onwards use new parameter, these dates are when the moon is full, server at index zero will be Jan 25th @ 13:00hrs start
     # this gives 4.5 hours of daylight before going dark for an hour before server restart
-    l_dates_new = [['28', '13'], ['27', '14'], ['28', '14'], ['27', '15'], ['26', '15'], ['24', '16'],
-                   ['24', '16'], ['22', '15'], ['21', '15'], ['20', '14'], ['19', '14'], ['19', '13'] ]
+    l_dates_new = [['25', '13'], ['24', '14'], ['25', '14'], ['24', '15'], ['23', '15'], ['22', '16'],
+                   ['21', '16'], ['19', '15'], ['18', '15'], ['17', '14'], ['16', '14'], ['15', '13']]
 
 
 PROBLEMS / BUGS:

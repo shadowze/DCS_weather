@@ -4,7 +4,7 @@
 : and 7z installed on server hosting PC
 : you will need to edit this file to change parameters to match your install
 : contact HC_Official in ED forums for any queries
-: 2022/12/11 V 2.8
+: 2023/DEC/31 V 3.1
 : try NOT to use paths with spaces in them, it is a PITA
 
 
@@ -57,15 +57,15 @@ REM @echo #     # #     # #    ## #          #    #     #
 REM @echo  #####  ####### #     # #         ###    #####
 
 : This section here will stop your DCS world dedicated server
-tasklist /fi "ImageName eq DCS.exe" /fo csv 2>NUL | find /I "DCS.exe">NUL
+tasklist /fi "ImageName eq DCS.exe" /fo csv 2>NUL | find /I "DCS_server.exe">NUL
 if "%ERRORLEVEL%" NEQ "0" GOTO :SKIP
 
 : Ask nicely first
-taskkill /IM DCS.exe
+taskkill /IM DCS_server.exe
 TIMEOUT /T 6
 
 : then club it over back of head to be sure
-taskkill /F /IM dcs.exe > nul 2>&1
+taskkill /F /IM DCS_server.exe > nul 2>&1
 TIMEOUT /T 8
 
 
@@ -111,9 +111,9 @@ ren %MISSION_NAME%.zip %MISSION_NAME%.miz
 :START_DCS
 cd /D %DCS_PATH%
 : remember you can add extra parameters to the line below for different saved_games sub folders to use eg -w DCS.openbeta_pg
-start /D%DCS_PATH% /B /ABOVENORMAL dcs.exe --norender --server 
+start /D%DCS_PATH% /B /ABOVENORMAL DCS_server.exe --norender --server 
 
 : full line example uses folder DCS.openbeta_pg for all server stuff
-: start /D%DCS_PATH% /B /ABOVENORMAL dcs.exe --norender --server -w DCS.openbeta_pg
+: start /D%DCS_PATH% /B /ABOVENORMAL DCS_server.exe --norender --server -w DCS.openbeta_pg
 
 timeout /T 10
